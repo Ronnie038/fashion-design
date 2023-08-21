@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -8,6 +7,7 @@ import {
 } from "react-router-dom";
 import Main from './layout/Main.jsx';
 import Home from './page/home/Home.jsx';
+import TopCategory from './page/home/man/TopCategory';
 
 const router = createBrowserRouter([
       {
@@ -18,8 +18,12 @@ const router = createBrowserRouter([
             path: "/",
             element: <Home></Home>
           },
+          {
+            path: "man",
+            element: <TopCategory></TopCategory>
+          }
         ]
-      },
+      }, 
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

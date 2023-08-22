@@ -36,7 +36,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/**
- * md:w-[768] lg:w-[1024]
- */
